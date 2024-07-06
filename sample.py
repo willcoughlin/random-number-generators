@@ -10,10 +10,10 @@ if __name__ == '__main__':
   # Init generators
   lecuyer = Lecuyer(seed)
   mersenne = MersenneTwister(seed)
-  tausworthe = Tausworthe(r=3, q=5, l=4, seed=seed)
+  tausworthe = Tausworthe(r=7, q=15, l=32, seed=seed)
 
   # Init sample matrix
-  N = 10000
+  N = 5000
   samples = np.zeros(shape=(N,3))
 
   # Sample from each
