@@ -1,3 +1,5 @@
+# This generator is adapted from the Mersenne Twister paper: http://www.math.sci.hiroshima-u.ac.jp/m-mat/MT/ARTICLES/mt.pdf
+
 class MersenneTwister:
   # Magic numbers
   N = 624
@@ -47,7 +49,7 @@ class MersenneTwister:
 
     return y / 0xffffffff
   
-gen = MersenneTwister(4357)
-
-for _ in range(10):
-  print(gen.next())
+if __name__ == '__main__':
+  gen = MersenneTwister(4357)
+  for _ in range(10):
+    print(gen.next())
