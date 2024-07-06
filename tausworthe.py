@@ -1,4 +1,4 @@
-class tausworthe:
+class Tausworthe:
   def __init__(self, r, q, l, seed=1):
     self.r = r
     self.q = q

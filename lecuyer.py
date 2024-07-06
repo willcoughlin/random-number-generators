@@ -1,4 +1,4 @@
-class lecuyer():
+class Lecuyer():
   def __init__(self, x0, x1):
     if len(x0) != 3:
       raise ValueError("Argument `x0` must be a list of 3 integers")
@@ -22,7 +22,7 @@ class lecuyer():
     self.i += 1
     return y / (2**32 - 209)
   
-gen = lecuyer(x0=[1,2,3], x1=[4,5,6])
+gen = Lecuyer(x0=[1,2,3], x1=[4,5,6])
 
 for _ in range(10):
   print(gen.next())
