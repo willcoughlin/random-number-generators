@@ -30,10 +30,9 @@ class tausworthe:
     self.__increment_bits()
 
     numerator = self.__bits_to_int(bits_to_convert)
-    return numerator #/ 2**self.l
+    return numerator / 2**self.l
 
 gen = tausworthe(r=3, q=5, l=4, seed=[1,0,1,0,1])
 
-print(gen.next())
-print(gen.next())
-print(gen.next())
+for _ in range(10):
+  print(gen.next())
